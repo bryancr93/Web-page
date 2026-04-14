@@ -21,14 +21,14 @@
 
     <!-- Navigation -->
     <header class="navbar container">
-        <div class="logo">
+        <a href="index.html" class="logo" style="text-decoration:none;">
             <img src="assets/logo.png" alt="Growing Along Logo" class="brand-logo">
-        </div>
+        </a>
         <nav class="nav-links">
-            <a href="#about">About Us</a>
-            <a href="#services">ABA Services</a>
-            <a href="#parents">For Parents</a>
-            <a href="#contact" class="btn-primary small">Contact Us</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">ABA Services</a>
+            <a href="parents.html">For Parents</a>
+            <a href="contact.html" class="btn-primary small">Contact Us</a>
         </nav>
     </header>
 
@@ -40,8 +40,8 @@
                 <h1 class="hero-title">Growing <span>Together</span> every step of the way.</h1>
                 <p class="hero-subtitle">At Growing Along, we provide ABA Therapy grounded in compassion and positive connections. We help your child reach their full potential in a natural and fun way.</p>
                 <div class="cta-group">
-                    <a href="#contact" class="btn-primary large">Book a Consultation</a>
-                    <a href="#services" class="btn-secondary large">Discover Our Programs</a>
+                    <a href="contact.html" class="btn-primary large">Book a Consultation</a>
+                    <a href="services.html" class="btn-secondary large">Discover Our Programs</a>
                 </div>
             </div>
             <div class="hero-graphics">
@@ -55,41 +55,6 @@
                     <h3>Family Support</h3>
                     <p>Continuous training and guidance for parents.</p>
                 </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services-section container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Evidence-based clinical interventions, tailored to your child's unique needs.</p>
-            </div>
-            
-            <div class="services-grid">
-                <article class="service-card glass-panel">
-                    <div class="icon-wrapper bg-teal">🌱</div>
-                    <h3>Early Intervention</h3>
-                    <p>Direct care for children aged 18 months to 5 years, focused on early developmental milestones and functional play.</p>
-                </article>
-                <article class="service-card glass-panel">
-                    <div class="icon-wrapper bg-yellow">🤝</div>
-                    <h3>Social Skills</h3>
-                    <p>Group and individual programs designed to help children connect with peers and navigate interactions successfully.</p>
-                </article>
-                <article class="service-card glass-panel">
-                    <div class="icon-wrapper bg-coral">❤️</div>
-                    <h3>Behavior Management</h3>
-                    <p>Positive and empathetic strategies to reduce interfering behaviors and teach alternative communication tools.</p>
-                </article>
-            </div>
-        </section>
-        
-        <!-- Bottom CTA -->
-        <section id="contact" class="cta-banner container">
-            <div class="glass-banner">
-                <h2>Ready to begin the journey?</h2>
-                <p>Our clinical team is ready to guide you through the assessment and intake process.</p>
-                <button class="btn-primary large mt-4">Request Information</button>
             </div>
         </section>
     </main>
@@ -108,9 +73,11 @@
             const x = e.clientX / window.innerWidth;
             const y = e.clientY / window.innerHeight;
             
-            blobs[0].style.transform = `translate(${x * 30}px, ${y * 30}px)`;
-            blobs[1].style.transform = `translate(${-x * 40}px, ${-y * 40}px)`;
-            blobs[2].style.transform = `translate(${x * 50}px, ${-y * 20}px)`;
+            if(blobs.length >= 3) {
+                blobs[0].style.transform = `translate(${x * 30}px, ${y * 30}px)`;
+                blobs[1].style.transform = `translate(${-x * 40}px, ${-y * 40}px)`;
+                blobs[2].style.transform = `translate(${x * 50}px, ${-y * 20}px)`;
+            }
         });
     </script>
 </body>
