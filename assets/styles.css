@@ -436,3 +436,123 @@ mt-4 { margin-top: 1.5rem; }
     .cta-group { justify-content: center; flex-direction: column; }
     .nav-links { display: none; }
 }
+
+/* ==== Linktree Custom Styles (links.html) ==== */
+.links-page {
+    /* Centered layout suitable for mobile displays like Linktree */
+    align-items: center;
+    padding: 2rem 1rem;
+    overflow-x: hidden;
+}
+
+.linktree-container {
+    width: 100%;
+    max-width: 480px; /* Constrain width to look like a mobile app */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.linktree-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    padding: 2rem;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    box-shadow: var(--glass-shadow);
+    width: 100%;
+}
+
+.brand-logo-large {
+    height: 90px;
+    width: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.linktree-title {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin-bottom: 0.3rem;
+}
+
+.linktree-subtitle {
+    font-size: 1rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.linktree-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: 100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background: white;
+    color: var(--text-main);
+    border: 1px solid rgba(0, 180, 216, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    cursor: pointer;
+}
+
+.link-btn .icon {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 1.5rem;
+}
+
+.link-btn:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 180, 216, 0.2);
+}
+
+.link-whatsapp { color: #fff; background: linear-gradient(135deg, #25D366, #128C7E); border: none; }
+.link-sms { color: #fff; background: linear-gradient(135deg, #00b4d8, #0077b6); border: none; }
+.link-call { color: #fff; background: linear-gradient(135deg, #ffb703, #fb8500); border: none; }
+.link-email { color: var(--text-main); }
+.link-website { background: var(--glass-bg); backdrop-filter: blur(10px); }
+.link-share { background: transparent; color: var(--text-muted); border: 2px dashed rgba(0,0,0,0.1); margin-top: 1rem; box-shadow: none; font-size: 1rem;}
+.link-share:hover { border-color: var(--primary); background: rgba(255,255,255,0.5); }
+
+.qr-code-popup {
+    margin-top: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: slideUp 0.4s ease-out forwards;
+}
+
+.qr-image {
+    width: 200px;
+    height: 200px;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.linktree-footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
