@@ -118,8 +118,17 @@ mt-4 { margin-top: 1.5rem; }
     color: var(--primary);
 }
 
-.logo-icon {
-    font-size: 1.8rem;
+.brand-logo {
+    height: 65px;
+    width: auto;
+    object-fit: contain;
+}
+
+.brand-logo-footer {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(0%) drop-shadow(0 2px 4px rgba(0,0,0,0.1));
 }
 
 .nav-links {
