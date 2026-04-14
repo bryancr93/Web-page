@@ -3,70 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página estática moderna construida y renderizada vía GitHub Pages">
-    <title>Innovación Estática | GitHub Pages</title>
+    <meta name="description" content="Growing Along - Servicios Especializados de Terapia ABA (Applied Behavior Analysis) para niños y familias.">
+    <title>Growing Along | Terapia ABA Especializada</title>
+    <!-- Fuentes Premium -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
+    <!-- Efectos de fondo amigables y cálidos -->
     <div class="background-effects">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
     </div>
 
-    <main class="container">
-        <header class="glass-header">
-            <div class="logo">🚀 Static<span>Nexus</span></div>
-            <nav class="nav-links">
-                <a href="#about">Acerca de</a>
-                <a href="#features">Características</a>
-                <button class="btn-primary">Contacto</button>
-            </nav>
-        </header>
+    <!-- Navegación -->
+    <header class="navbar container">
+        <div class="logo">
+            <span class="logo-icon">🌿</span>
+            Growing<span>Along</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#about">Nosotros</a>
+            <a href="#services">Servicios ABA</a>
+            <a href="#parents">Para Padres</a>
+            <a href="#contact" class="btn-primary small">Contáctanos</a>
+        </nav>
+    </header>
 
-        <section class="hero-section">
-            <h1 class="hero-title">Renderizado <span>Estático</span> al Siguiente Nivel</h1>
-            <p class="hero-subtitle">Despliegues relámpago impulsados por la velocidad del HTML puro y la automatización de GitHub Actions. Construido para el rendimiento.</p>
-            <div class="cta-group">
-                <a href="#" class="btn-primary large">Explorar Arquitectura</a>
-                <a href="#" class="btn-secondary large">Ver Repositorio</a>
+    <main>
+        <!-- Sección Principal -->
+        <section class="hero-section container">
+            <div class="hero-content">
+                <span class="badge">Atención Centrada en la Familia</span>
+                <h1 class="hero-title">Creciendo <span>Juntos</span> a cada paso.</h1>
+                <p class="hero-subtitle">En Growing Along, proveemos Terapia ABA basada en la compasión y los vínculos positivos. Ayudamos a tu hijo a alcanzar su máximo potencial de forma natural y divertida.</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn-primary large">Agenda una Consulta</a>
+                    <a href="#services" class="btn-secondary large">Conoce los Programas</a>
+                </div>
+            </div>
+            <div class="hero-graphics">
+                <div class="glass-card main-card">
+                    <div class="card-icon">🧩</div>
+                    <h3>Desarrollo Integral</h3>
+                    <p>Fomentando habilidades sociales, de comunicación y juego.</p>
+                </div>
+                <div class="glass-card secondary-card">
+                    <div class="card-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Apoyo Familiar</h3>
+                    <p>Entrenamiento y guía continua para padres.</p>
+                </div>
             </div>
         </section>
 
-        <section id="features" class="features-grid">
-            <article class="feature-card glass-panel">
-                <div class="icon-wrapper">⚡️</div>
-                <h3>Latencia Cero</h3>
-                <p>Al servir archivos HTML pre-renderizados, reducimos el tiempo de TTFB (Time to First Byte) a milisegundos.</p>
-            </article>
-            <article class="feature-card glass-panel">
-                <div class="icon-wrapper">🛡️</div>
-                <h3>Seguridad Máxima</h3>
-                <p>Sin bases de datos ni servidores dinámicos en producción significa cero vulnerabilidades de inyección.</p>
-            </article>
-            <article class="feature-card glass-panel">
-                <div class="icon-wrapper">🐙</div>
-                <h3>Integración GitHub</h3>
-                <p>CI/CD automatizado utilizando GitHub Actions y GitHub Pages para un despliegue continuo e impecable.</p>
-            </article>
+        <!-- Sección de Servicios -->
+        <section id="services" class="services-section container">
+            <div class="section-header">
+                <h2>Nuestros Servicios</h2>
+                <p>Intervenciones clínicas basadas en evidencia, adaptadas a las necesidades únicas de tu hijo.</p>
+            </div>
+            
+            <div class="services-grid">
+                <article class="service-card glass-panel">
+                    <div class="icon-wrapper bg-teal">🌱</div>
+                    <h3>Intervención Temprana</h3>
+                    <p>Atención directa para niños de 18 meses a 5 años, enfocada en los hitos iniciales del desarrollo y el juego funcional.</p>
+                </article>
+                <article class="service-card glass-panel">
+                    <div class="icon-wrapper bg-yellow">🤝</div>
+                    <h3>Habilidades Sociales</h3>
+                    <p>Programas grupales e individuales para ayudar a los niños a conectar con sus pares y navegar interacciones exitosamente.</p>
+                </article>
+                <article class="service-card glass-panel">
+                    <div class="icon-wrapper bg-coral">❤️</div>
+                    <h3>Manejo de Conductas</h3>
+                    <p>Estrategias positivas y empáticas para reducir conductas de interferencia y enseñar herramientas de comunicación alternativas.</p>
+                </article>
+            </div>
+        </section>
+        
+        <!-- CTA Inferior -->
+        <section id="contact" class="cta-banner container">
+            <div class="glass-banner">
+                <h2>¿Listo para empezar el viaje?</h2>
+                <p>Nuestro equipo clínico está listo para guiarte en el proceso de evaluación y admisión.</p>
+                <button class="btn-primary large mt-4">Solicitar Información</button>
+            </div>
         </section>
     </main>
 
-    <footer class="glass-footer">
-        <p>&copy; 2026 StaticNexus. Creado con tecnología estática.</p>
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="logo">🌿 Growing<span>Along</span></div>
+            <p>&copy; 2026 Growing Along - Terapia ABA. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
     <script>
-        // Micro-interacciones
+        // Efecto parallax muy sutil y amigable
         document.addEventListener('mousemove', (e) => {
             const blobs = document.querySelectorAll('.blob');
             const x = e.clientX / window.innerWidth;
             const y = e.clientY / window.innerHeight;
             
-            blobs[0].style.transform = `translate(${x * 50}px, ${y * 50}px)`;
-            blobs[1].style.transform = `translate(${-x * 50}px, ${-y * 50}px)`;
+            blobs[0].style.transform = `translate(${x * 30}px, ${y * 30}px)`;
+            blobs[1].style.transform = `translate(${-x * 40}px, ${-y * 40}px)`;
+            blobs[2].style.transform = `translate(${x * 50}px, ${-y * 20}px)`;
         });
     </script>
 </body>
